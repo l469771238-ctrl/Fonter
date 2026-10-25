@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "FontAnalyzerAndroid_Project.zip"
+      - "FontAnalyzer.zip"
       - ".github/workflows/build-apk.yml"
 
 permissions:
@@ -31,7 +31,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip -o FontAnalyzerAndroid_Project.zip -d .
+          unzip -o temurin -d .
           test -f FontAnalyzerAndroid/app/build.gradle.kts
 
       - name: Build APK

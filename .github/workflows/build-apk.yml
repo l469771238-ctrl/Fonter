@@ -31,7 +31,7 @@ jobs:
 
       - name: Extract project
         run: |
-          unzip -o temurin -d .
+          unzip -o FontAnalyzer.zip -d .
           test -f FontAnalyzerAndroid/app/build.gradle.kts
 
       - name: Build APK
